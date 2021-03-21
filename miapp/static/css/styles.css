@@ -1,0 +1,292 @@
+/*Estilos generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.box p, .box h2, .box h3,.box ul{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box ul, .box ol{
+    margin-left: 20px;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    width: 1212px;
+    height: 140px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+#logotipo{
+    width: 60%;
+    height: 140px;
+    margin: 0 auto;
+}
+
+/*Manipulación de la imágen propiamente tal*/
+#logotipo img{
+    display: block;
+    width: 140px;
+    float:left;
+    margin-top: 0 auto;
+}
+
+#logotipo h1{
+    display: block;
+    letter-spacing: 2px;
+    float: left;
+    margin-top: 5%;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgb(189, 7, 67);
+}
+
+/* Texto en h1 "ENCENTRA LOS TESOROS*/
+#logotipo h2{
+    display: block;
+    letter-spacing: -2px;
+    float: left;
+    margin-top: 0%;
+    margin-left: 20px;
+    font-weight: normal;
+    color: rgb(228, 128, 13);
+}
+
+nav{
+    width: 1250px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(175, 169, 167);
+    border: 1px solid #e2e1e1;
+    box-shadow: 0px 22px 22px rgb(85, 84, 84);
+
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li{
+    line-height: 40px ;
+    float: left;
+}
+nav ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+nav ul li a:hover{
+    background: #dbb405;
+    box-shadow: 100px 0px 25px rgb(189, 7, 67) inset;
+    transition: all 500ms;
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.esquina-izquierda{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: left;
+}
+
+.esquina-derecha{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: right;
+}
+
+.relleno-barra{
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background: #2B2F30;
+    float: left;
+}
+
+/* Estilos centrales */
+
+#content{
+    width: 100%;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.box{
+    background: rgb(235, 232, 232);
+    width: 95%;
+    min-height: 930px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    margin: 0 auto;
+}
+
+.box form{
+    width: 40%;   
+}
+
+.box form input,
+.box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.box form input[type="text"],
+.box form textarea,
+.box form select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box form select{
+    width: 100px;
+    padding: 5px;
+}
+
+.box form input[type="submit"],
+.box form input[type="button"],
+.box form button{
+    padding: 10px;
+    margin-top: 5px;
+    background:rgb(189, 7, 67);
+    border: 1px solid #d1d4d6;
+    color:#d1d4d6;
+    transition: 300ms all;
+}
+
+.rojo{
+    color: red;
+    box-shadow: 0px 0px 4x black;
+}
+
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button:hover{
+    cursor: pointer;
+    background: #dbb405;
+    transition: 300ms all;
+}
+
+.title{
+    color: rgb(3, 3, 3);
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.article-item{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 1%;
+    clear: both;
+}
+
+.article-item .image{
+    
+    float: right;
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-item .image img{
+    height: 200px;
+}
+
+.article-item .data{
+   
+    width: 60%;
+    padding: 15px;
+}
+
+
+
+/* Lugar/Cerro */
+.article-item h2{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color:rgb(189, 7, 67);
+}
+
+
+.article-item .data h4 {
+    float: left;
+    color:#dbb405;
+    /* margin-bottom: 10px; */
+    background-color: #2B2F30;
+    /* padding: 5px; */
+}
+
+.article-item .data h3 {
+    color:#11100e;
+
+}
+
+
+
+.article-item span.date{
+    display:block;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: block;
+    padding: 5px;
+    background:rgb(189, 7, 67);
+    color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.message{
+    padding: 20px;
+    background: #dbb405;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 1255px;
+    background-color: rgb(189, 7, 67);
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+

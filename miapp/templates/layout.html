@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCZ6EYBXLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCZ6EYBXLP');
+  
+</script> 
+
+<meta charset="utf-8">
+    <meta name="description" content="Todos los teosoros de Valparaíso como street art, ascensores, miradores, escaleras, en un solo sitio"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">  
+
+    <title>
+        {% block title %}
+        {% endblock %}
+        | La Brújula 
+    </title>
+
+<!-- CDN Bootstrap -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+ <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+        <a class="navbar-brand" href="{% url 'inicio' %}">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+                 <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cerros</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="{% url 'lecheros' %}">Lecheros</a>
+              <a class="dropdown-item" href="{% url 'larrain' %}">Larraín</a>
+              <a class="dropdown-item" href="{% url 'polanco' %}">Polanco</a>
+              <a class="dropdown-item" href="{% url 'monjas' %}">Monjas</a>
+              <a class="dropdown-item" href="{% url 'mariposas' %}">Mariposas</a>
+              <a class="dropdown-item" href="{% url 'yungay' %}">Yungay</a>
+              <a class="dropdown-item" href="{% url 'sanjuandedios' %}">San Juan de Dios</a>
+              <a class="dropdown-item" href="{% url 'carcel' %}">Cárcel</a>
+              <a class="dropdown-item" href="{% url 'panteon' %}">Panteón</a>
+              <a class="dropdown-item" href="{% url 'alegre' %}">Alegre</a>
+              <a class="dropdown-item" href="{% url 'concepcion' %}">Concepción</a>
+              <a class="dropdown-item" href="{% url 'cordillera' %}">Cordillera</a>
+              <a class="dropdown-item" href="{% url 'artilleria' %}">Artilleria</a>
+              <a class="dropdown-item" href="{% url 'playaancha' %}">Playa Ancha</a>
+            </div>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'articulos' %}">Street Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'ascensores' %}">Ascensores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'escaleras' %}">Escaleras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'miradores' %}">Miradores</a>
+            </li>
+            {% comment %} <li class="nav-item">
+              <a class="nav-link"  href="{% url 'iglesias' %}">Iglesias</a>
+            </li> {% endcomment %}
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'otros' %}">Otros</a>
+            </li>
+          </ul>
+           
+        </div>
+      </nav>
+    </header>
+
+    <!--HEADER-->
+  
+  <br><br><br>
+
+
+<div class="container-fluid px-0">
+    {% block content %}
+                <!--Aquí se inserta el contenido de las distintas templates-->
+               
+    {% endblock %}
+<div>
+
+<footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #625b5a;"
+        href="https://www.instagram.com/labrujuladevalpo/"
+        role="button"
+        ><i class="bi bi-facebook" style="font-size: 1rem; color: white"></i></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #625b5a;"
+        href="https://www.facebook.com/labrujula814"
+        role="button"
+        ><i class="bi bi-instagram" style="font-size: 1rem; color: white"></i></a>
+
+          </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">www.labrujula.tk</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-zoom/dist/zoom.browser.js"></script>
+<script> Zoom(".zoomable"); </script>
+
+</body>
+</html>

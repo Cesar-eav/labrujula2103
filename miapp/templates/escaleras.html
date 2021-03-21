@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %} Escaleras {% endblock %}
+
+{% block content %}
+
+
+<br>
+
+<div class="row mx-0">
+    {% for escalera in escaleras %}
+  <div class="col-md-3 col-sm-12 col-lg-4">     
+          <div class="card pb-10">
+             <img class="zoomable"  src="{{escalera.image.url}}" class="img-fluid"/>
+            <p class="mb-1"> <strong>{{escalera.lugar}} </strong> | {{escalera.descripcion}}</p>
+            <p>Dirección: {{escalera.direccion}} | Artista: {{escalera.autor}}
+          </div>        
+  </div>         
+    {% endfor %}
+</div>  
+
+
+{% comment %} <div class="album py-5 bg-light">
+  <div class="container">
+    {% for esccord in cordillera %}  
+      <img src="{{esccord.image.url}}">
+    {% endfor %}
+  </div>
+</div> {% endcomment %}
+
+{% endblock %}

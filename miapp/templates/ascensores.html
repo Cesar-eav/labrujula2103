@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %} Ascensores {% endblock %}
+
+{% block content %}
+
+
+<div class="row mx-0">
+    {% for ascensor in ascensores %}
+  <div class="col-md-3 col-sm-12 col-lg-6">     
+          <div class="card pb-10">
+             <img class="zoomable"  src="{{ascensor.image.url}}" class="img-fluid"/>
+            <p class="mb-1"> <strong>{{ascensor.nombre}} </strong> | Calle: {{ascensor.content}}</p>
+          </div>        
+  </div>         
+    {% endfor %}
+</div>  
+
+
+{% endblock %}
