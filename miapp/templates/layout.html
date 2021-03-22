@@ -4,7 +4,7 @@
 <head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCZ6EYBXLP"></script>
+{% comment %} <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCZ6EYBXLP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,7 +12,7 @@
 
   gtag('config', 'G-RCZ6EYBXLP');
   
-</script> 
+</script>  {% endcomment %}
 
 <meta charset="utf-8">
     <meta name="description" content="Todos los teosoros de Valparaíso como street art, ascensores, miradores, escaleras, en un solo sitio"/>
@@ -52,6 +52,8 @@
               <a class="dropdown-item" href="{% url 'polanco' %}">Polanco</a>
               <a class="dropdown-item" href="{% url 'monjas' %}">Monjas</a>
               <a class="dropdown-item" href="{% url 'mariposas' %}">Mariposas</a>
+              <a class="dropdown-item" href="{% url 'florida' %}">Florida</a>
+              <a class="dropdown-item" href="{% url 'bellavista' %}">Bellavista</a>
               <a class="dropdown-item" href="{% url 'yungay' %}">Yungay</a>
               <a class="dropdown-item" href="{% url 'sanjuandedios' %}">San Juan de Dios</a>
               <a class="dropdown-item" href="{% url 'carcel' %}">Cárcel</a>
