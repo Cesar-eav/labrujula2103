@@ -10,7 +10,7 @@
     {%for articulo in articulos %}
   <div class="col-md-3 col-sm-12 col-lg-4">     
           <div class="card pb-10">
-             <img class="zoomable" src="{{articulo.image.url}}" />
+             <img src="{{articulo.image.url}}" />
             <p class="mb-1"> <strong>{{articulo.title}}</strong> | Calle: {{articulo.content}}</p>
               {% if articulo.artista == 'sfo' or articulo.artista == 'sin info' %}
                 <p><strong>Artista:</strong> Sin información</p>
