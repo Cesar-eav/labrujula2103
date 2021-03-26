@@ -6,18 +6,9 @@
 
 <h1 class="title"> Iglesias </h1>
 
-{% if messages %}
-    {% for message in messages %}
-        <div class="message">
-            {{message}}
-        </div>
-    {% endfor %}
-{% endif %}
 
 
     {% for iglesia in iglesias %}
-        <article class="article-item">
-
             {% if iglesia.image != 'null' and iglesia.image.url|length >= 1 %}
                 
                 <div class="image">
@@ -33,7 +24,6 @@
             </div>                
 
             <div class="clearfix"></div>
-        </article>
     {% endfor %}
 
 
