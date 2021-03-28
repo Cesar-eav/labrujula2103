@@ -8,8 +8,8 @@
 <br>
 <div class="row">
     {%for articulo in articulos %}
-  <div class="col-md-3 col-sm-12 col-lg-4">     
-          <div class="card pb-10">
+      <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
              <img class="zoomable" src="{{articulo.image.url}}" />
             <p class="mb-1"> <strong>{{articulo.title}}</strong> | Calle: {{articulo.content}}</p>
               {% if articulo.artista == 'sfo' or articulo.artista == 'sin info' %}
