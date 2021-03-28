@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['151.106.109.144', 'labrujula.tk', 'www.labrujula.tk']
 
-# 
+# '151.106.109.144', 'labrujula.tk', 'www.labrujula.tk'
 
 
 # Application definition
