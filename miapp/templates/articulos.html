@@ -6,10 +6,11 @@
 {% block content %}
 
 <br>
+
 <div class="row">
     {%for articulo in articulos %}
-      <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
+      <div class="col-md-4 col-sm-6">
+          <div class="card mb-4">
              <img class="zoomable" src="{{articulo.image.url}}" />
             <p class="mb-1"> <strong>{{articulo.title}}</strong> | Calle: {{articulo.content}}</p>
               {% if articulo.artista == 'sfo' or articulo.artista == 'sin info' %}
