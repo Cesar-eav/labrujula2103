@@ -62,10 +62,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_PAGINATION_CLASSS': 'rest_framework.pagination.LimitOffsetPagination',
-#     'PAGE_SIZE': 10
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASSS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10
+}
 
 
 
