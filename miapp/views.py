@@ -120,17 +120,12 @@ def editar_articulo(request, id):
 def articulos(request):
 
     articulos = Article.objects.all().order_by('?')
-
-
     # Paginar articulos (articulos x pagina)
     paginator = Paginator(articulos, 15)
-
     # Recoger número página
     page = request.GET.get('page')
     page_articles = paginator.get_page(page)
-
     #articulos = Article.objects.filter(title="Cordillera")
-
     return render(request, 'articulos.html',{
         'articulos': page_articles
     })
@@ -165,8 +160,6 @@ def escaleras(request):
         'escaleras': escaleras,
         'cordillera': cordilleras
     })
-
-
 
 
 def otros(request):

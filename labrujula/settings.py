@@ -26,10 +26,16 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['151.106.109.144', 'labrujula.tk', 'www.labrujula.tk']
+ALLOWED_HOSTS = ['151.106.109.144', 'vps.labrujula.tk']
 
-# '151.106.109.144', 'labrujula.tk', 'www.labrujula.tk'
+# '151.106.109.144', 'vps.labrujula.tk'
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+
+]
 
 # Application definition
 
@@ -41,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'miapp.apps.MiappConfig',
+    'rest_framework',
+    'corsheaders',
  ]
 
 MIDDLEWARE = [
@@ -51,7 +59,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASSS': 'rest_framework.pagination.LimitOffsetPagination',
+#     'PAGE_SIZE': 10
+# }
+
+
 
 ROOT_URLCONF = 'labrujula.urls'
 

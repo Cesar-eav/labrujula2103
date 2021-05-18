@@ -45,6 +45,8 @@ class Mira(models.Model):
     cerro = models.CharField(max_length=100, verbose_name="nombre", default="Cerro")
     lugar = models.CharField(max_length=100, verbose_name="Lugar", default="Nombre") 
     gps = models.CharField(max_length=100, verbose_name="GPS", default="gps") 
+    lat = models.CharField(max_length=100, verbose_name="Lat", default="lat") 
+    long = models.CharField(max_length=100, verbose_name="Long", default="long") 
     calle = models.CharField(max_length=100, verbose_name="calle", default="calle")   
     image = models.ImageField(default='null',verbose_name="Miniatura", upload_to="miradores")
     created_at = models.DateTimeField(auto_now_add=True)
@@ -113,9 +115,6 @@ class Ascensores(models.Model):
 
     def __str__(self):
         return f"{self.nombre}"
-
-
-
 
 class Boots(models.Model):
     nombre = models.CharField(max_length=100)
