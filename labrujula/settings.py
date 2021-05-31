@@ -26,14 +26,14 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['151.106.109.144', 'vps.labrujula.tk']
+ALLOWED_HOSTS = ['144.126.215.197']
 
 # '151.106.109.144', 'vps.labrujula.tk'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
+    "http://labrujula.tk",
 
 ]
 

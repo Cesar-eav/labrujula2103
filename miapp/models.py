@@ -3,9 +3,12 @@ from django.db import models
 # Create your models here.
 
 class Article(models.Model):
+    publicidad = models.BooleanField(verbose_name="Publicidad", default=False) 
     title = models.CharField(max_length=100, verbose_name="Lugar") 
     artista = models.CharField(max_length=100, verbose_name="Artista")  
     gps = models.CharField(max_length=100, verbose_name="GPS") 
+    lat = models.CharField(max_length=100, verbose_name="Lat", default="0" ) 
+    lon = models.CharField(max_length=100, verbose_name="Lon", default="0") 
     content = models.TextField(verbose_name="Contenido")
     image = models.ImageField(default='null',verbose_name="Miniatura", upload_to="articles")
     #public = models.BooleanField(verbose_name="¿Publicado?", default=False)
@@ -153,3 +156,22 @@ class Escaleras(models.Model):
     
     def __str__(self):
         return f"{self.descripcion}"
+
+class Publicidad(models.Model):
+    publicidad = models.CharField(max_length=100, default="false")
+    local_nombre = models.CharField(max_length=100, verbose_name="Local")
+    direccion = models.CharField(max_length=100)
+    lugar = models.CharField(max_length=100)
+    descripcion = models.TextField(max_length=250)
+    gps = models.CharField(max_length=100, verbose_name="GPS") 
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    image = models.ImageField(default='null',verbose_name="Miniatura", upload_to="publicidad")
+
+    class Meta:
+        verbose_name= "Publicidad"
+        verbose_name_plural= "Publicidades"
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.local_nombre}"

@@ -98,5 +98,5 @@ class ArtilleriaViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer  
 
 class PlayaAnchaViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.filter(title="Playa Ancha")
+    queryset = Article.objects.filter(title="Playa Ancha").order_by('?')
     serializer_class = ArticleSerializer  
