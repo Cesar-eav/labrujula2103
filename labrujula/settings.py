@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['144.126.215.197']
 
-# '151.106.109.144', 'vps.labrujula.tk'
+# 'http://127.0.0.1:8000/', '144.126.215.197'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
