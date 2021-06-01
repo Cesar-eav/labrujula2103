@@ -6,7 +6,7 @@ from .serializer import ArticleSerializer, CategorySerializer, MiraSerializer, O
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.all().order_by('?')
+    queryset = Article.objects.all()
     serializer_class = ArticleSerializer
 
 class CategoryViewSet(viewsets.ModelViewSet):
