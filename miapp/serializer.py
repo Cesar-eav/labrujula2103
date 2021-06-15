@@ -1,5 +1,6 @@
+from miapp.views import arquitectura
 from rest_framework import serializers
-from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Boots, Escaleras
+from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Boots, Escaleras, Arquitectura
 
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta: 
@@ -29,6 +30,11 @@ class IglesiasSerializer(serializers.ModelSerializer):
 class AscensoresSerializer(serializers.ModelSerializer):
     class Meta: 
         model = Ascensores
+        fields = '__all__'
+
+class ArquitecturaSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = Arquitectura
         fields = '__all__'
 
 class BootsSerializer(serializers.ModelSerializer):

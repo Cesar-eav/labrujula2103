@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Escaleras, Publicidad
+from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Escaleras, Publicidad, Arquitectura
 
 # Register your models here.
 class ArticleAdmin(admin.ModelAdmin):
@@ -13,4 +13,5 @@ admin.site.register(Iglesias)
 admin.site.register(Ascensores)
 admin.site.register(Escaleras)
 admin.site.register(Publicidad)
+admin.site.register(Arquitectura)
 

@@ -56,6 +56,7 @@ urlpatterns = [
     path('playaancha/', views.playaancha, name="playaancha"),
     path('larrain/', views.larrain, name="larrain"),
     path('patrimonio/', views.patrimonio, name="patrimonio"),
+    path('arquitectura/', views.arquitectura, name="arquitectura"),
 
     
 ]

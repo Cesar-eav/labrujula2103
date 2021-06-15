@@ -165,6 +165,26 @@ class Escaleras(models.Model):
     def __str__(self):
         return f"{self.descripcion}"
 
+class Arquitectura(models.Model):
+    publicidad = models.BooleanField(verbose_name="Publicidad", default=False) 
+    lugar = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=250)
+    direccion = models.CharField(max_length=250, default="dir")
+    antecedentes = models.TextField(max_length=250, default="")
+    lat = models.CharField(max_length=100, verbose_name="Lat", default="0") 
+    lon = models.CharField(max_length=100, verbose_name="Lon", default="0")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    image = models.ImageField(default='null',verbose_name="Miniatura", upload_to="arquitectura")
+
+    class Meta:
+        verbose_name= "Arquitectura"
+        verbose_name_plural= "Arquitecturas"
+
+    
+    def __str__(self):
+        return f"{self.descripcion}"
+
 class Publicidad(models.Model):
     publicidad = models.CharField(max_length=100, default="false")
     local_nombre = models.CharField(max_length=100, verbose_name="Local")

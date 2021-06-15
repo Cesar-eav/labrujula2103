@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 
 
-from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Boots, Escaleras
-from .serializer import ArticleSerializer, CategorySerializer, MiraSerializer, OtrosSerializer, IglesiasSerializer, AscensoresSerializer, BootsSerializer, EscalerasSerializer
+from .models import Article, Category, Mira, Otros, Iglesias, Ascensores, Boots, Escaleras, Arquitectura
+from .serializer import ArticleSerializer, CategorySerializer, MiraSerializer, OtrosSerializer, IglesiasSerializer, AscensoresSerializer, BootsSerializer, EscalerasSerializer, ArquitecturaSerializer
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
@@ -36,6 +36,10 @@ class BootsViewSet(viewsets.ModelViewSet):
 class EscalerasViewSet(viewsets.ModelViewSet):
     queryset = Escaleras.objects.all()
     serializer_class = EscalerasSerializer
+
+class ArquitecturaViewSet(viewsets.ModelViewSet):
+    queryset = Arquitectura.objects.all()
+    serializer_class = ArquitecturaSerializer
 
 class LecherosViewSet(viewsets.ModelViewSet):
     queryset = Article.objects.filter(title="Lecheros")

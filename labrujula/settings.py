@@ -26,9 +26,8 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['144.126.215.197']
+ALLOWED_HOSTS = []
 
-# 'http://127.0.0.1:8000/', 
 # '144.126.215.197' --> DIGITAL OCEAN
 
 CORS_ALLOW_ALL_ORIGINS = True

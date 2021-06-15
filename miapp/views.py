@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
-from miapp.models import Article, Boots, Mira, Otros, Iglesias, Ascensores, Escaleras
+from miapp.models import Arquitectura, Article, Boots, Mira, Otros, Iglesias, Ascensores, Escaleras
 from django.db.models import Q
 from miapp.forms import FormArticle
 from django.contrib import messages
@@ -143,23 +143,27 @@ def iglesias(request):
     })
 
 def ascensores(request):
-
     ascensores = Ascensores.objects.all().order_by('-id')
-
     return render(request, 'ascensores.html',{
         'ascensores': ascensores
     })
 
 
 def escaleras(request):
-
     escaleras = Escaleras.objects.all().order_by('?')
-    cordilleras = Escaleras.objects.filter(lugar="Cordillera")
-
+    #ascensores = Ascensores.objects.all().order_by('?')
     return render(request, 'escaleras.html',{
         'escaleras': escaleras,
-        'cordillera': cordilleras
+        #'ascensores': ascensores
     })
+
+def arquitectura(request):
+    arquitectura = Arquitectura.objects.all()
+    return render(request, 'arquitectura.html',{
+        'arquitecturas': arquitectura,
+    
+    })
+
 
 
 def otros(request):
