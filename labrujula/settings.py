@@ -24,9 +24,9 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['143.110.237.139', '143.110.237.139:8080']
+ALLOWED_HOSTS = ['143.110.237.139']
 
 # '143.110.237.139' --> DIGITAL OCEAN
 
