@@ -3,6 +3,8 @@ from rest_framework import routers
 
 from .viewsets import ArticleViewSet, MiraViewSet, IglesiasViewSet, AscensoresViewSet, EscalerasViewSet, LecherosViewSet, OtrosViewSet, LarrainViewSet, PolancoViewSet, MonjasViewSet, MariposasViewSet, FloridaViewSet, BellavistaViewSet, YungayViewSet, SanjuandediosViewSet, CarcelViewSet, PanteonViewSet, AlegreViewSet, ConcepcionViewSet, CordilleraViewSet, ArtilleriaViewSet, PlayaAnchaViewSet, ArquitecturaViewSet
 
+from . import views
+
 route = routers.SimpleRouter()
 route.register('streetart', ArticleViewSet)
 route.register('miradores', MiraViewSet)
@@ -33,5 +35,7 @@ route.register('playaancha', PlayaAnchaViewSet)
 # route.register('category', CategoryViewSet)
 # route.register('type', TypeViewSet)
 
-# De define de esta manera porque se está empleando el REST_FRAMEWORK
+# Se define de esta manera porque se está empleando el REST_FRAMEWORK
 urlpatterns = route.urls
+
+urlpatterns += path('login',views.login),

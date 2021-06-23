@@ -15,3 +15,4 @@ admin.site.register(Escaleras)
 admin.site.register(Publicidad)
 admin.site.register(Arquitectura)
 
+
