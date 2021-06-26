@@ -86,7 +86,7 @@ class PanteonViewSet(viewsets.ModelViewSet):
 
 class AlegreViewSet(viewsets.ModelViewSet):
     queryset = Article.objects.filter(title="Alegre")
-    serializer_class = ArticleSerializer  
+    serializer_class = ArticleSerializer
 
 class ConcepcionViewSet(viewsets.ModelViewSet): 
     queryset = Article.objects.filter(title="Concepción")
@@ -101,5 +101,5 @@ class ArtilleriaViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer  
 
 class PlayaAnchaViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.filter(title="Playa Ancha").order_by('?')
+    queryset = Article.objects.filter(title="Playa Ancha")
     serializer_class = ArticleSerializer  
