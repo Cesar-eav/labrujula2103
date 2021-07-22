@@ -26,14 +26,14 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['142.93.240.149']
+ALLOWED_HOSTS = ['142.93.240.149', '142.93.240.149:8080']
 
 # '142.93.240.149' --> DIGITAL OCEAN
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://labrujula.tk",
+    "http://apilabrujula.tk",
 
 ]
 
