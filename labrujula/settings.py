@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['142.93.240.149']
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "apilabrujula.tk",
+    "http://apilabrujula.tk",
 
 ]
 
