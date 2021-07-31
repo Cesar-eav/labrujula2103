@@ -26,7 +26,7 @@ SECRET_KEY = '5kssoe*7786a1&k51)6(uozcyq4@20y-8zi@_(z*)r&on5td8q'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['147.182.193.147', 'http://apilabrujula.tk', 'apilabrujula.tk', 'www.apilabrujula.tk']
+ALLOWED_HOSTS = ['143.244.177.73', 'http://apilabrujula.tk', 'apilabrujula.tk', 'www.apilabrujula.tk']
 
 # '142.93.240.149' --> DIGITAL OCEAN
 
